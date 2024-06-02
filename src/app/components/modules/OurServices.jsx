@@ -1,5 +1,8 @@
+'use client';
+
 import React from "react";
 import Card from "../Card";
+import { cardData } from "@/app/constant/CardData";
 
 const OurServices = () => {
   return (
@@ -14,17 +17,13 @@ const OurServices = () => {
       </div>
       {/* Card-Section */}
       <section className="card mt-5 mx-5 gap-5 grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-1">
-        {<>
-<Card/>
-<Card/>
-<Card/>
-<Card/>
-<Card/>
-<Card/>
-<Card/>
-<Card/>
-        </>
-        }
+        {cardData?.map((data, index) => {
+          return (
+            <div key={index}>
+              <Card data={data} />
+            </div>
+          );
+        })}
       </section>
     </div>
   );
