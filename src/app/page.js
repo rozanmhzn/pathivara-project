@@ -8,6 +8,7 @@ import Testimonials from "./components/modules/Testimonials";
 import LatestNews from "./components/modules/LatestNews";
 import OurClients from "./components/modules/OurClients";
 import Footer from "./components/partials/Footer";
+import ImageSlider from "./components/ImageSlider";
 
 export default function Home() {
   return (
@@ -15,6 +16,9 @@ export default function Home() {
       <section className="navbar">
      <Navbar/>
       </section>
+      {/* <section>
+        <ImageSlider/>
+      </section> */}
       <section>
         <AboutUs/>
       </section>
