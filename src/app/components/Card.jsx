@@ -14,7 +14,7 @@ const Card = ({data}) => {
       </section>
       <section className="cursor-pointer">
         <buton>
-          <span>Read More</span>
+          <span>{data?.more}</span>
         </buton>
       </section>
     </div>
