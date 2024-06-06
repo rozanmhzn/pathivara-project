@@ -14,7 +14,7 @@ const OurTeam = () => {
           THE BEST TEAM EVER!
         </span>
       </div>
-      <div className='grid grid-cols-3 gap-y-10 ml-5'>
+      <div className='grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-y-10 ml-5'>
         {profiles.map((profile, index) => (
           <TeamCard
             key={index} data={profile}

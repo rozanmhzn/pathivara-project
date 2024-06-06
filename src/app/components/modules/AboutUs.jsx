@@ -1,4 +1,5 @@
 
+import Link from 'next/link';
 import React from 'react'
 import { IoIosArrowDropright } from "react-icons/io";
 
@@ -23,10 +24,12 @@ const AboutUs = () => {
         </span>
       </section>
       <section className='lg:w-3/5 sm:w-full justify-items-center ml-5 lg:text-lg sm:text-sm text-textColor'>
+        <Link href={'/about-us'}>
         <button className="w-1/2 bg-black p-3 rounded-full hover:bg- flex justify-center items-center gap-3">
             <IoIosArrowDropright size={20}/>
             <span>Discover More</span>
         </button>
+        </Link>
       </section>
     </div>
   );
