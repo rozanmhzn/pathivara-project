@@ -18,16 +18,35 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background: linear-gradient(to bottom, transparent, rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+.semi-circle-r {
+  width: 30px;
+  height: 50px; /* Half of the width to make a semi-circle */
+  border: 1px solid #3498db;
+  border-top-right-radius: 500px;
+  border-bottom-right-radius: 500px;
+  border-left: 0;
+}
+.semi-circle-l {
+  width: 30px;
+  height: 50px; /* Half of the width to make a semi-circle */
+  border: 1px solid #3498db;
+  border-top-left-radius: 500px;
+  border-bottom-left-radius: 500px;
+  border-right: 0;
+}
+
+.image-back {
+  z-index: 0;
+}
+.contain-front {
+  z-index: 1;
 }
