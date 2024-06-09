@@ -56,18 +56,17 @@ const Testimonials = () => {
           </span>
         </div>
       </section>
-      <section className="flex mt-10 mx-5 gap-5 w-full">
+      <section className="flex mt-10 mx-5 gap-5 w-full ">
         <div className="text-HeadingColor w-3/5 text-9xl">
           <span>WHAT WE CAN DO</span>
         </div>
-        <div className=" flex flex-row gap-5 "> 
-        {productionData.map((data, index)=>{
-          return(
-            <ProductionCard cardData={data}/>
-          )
-        })
-        }
-        <div className="text-HeadingColor w-3/5 text-9xl"> ALL IT SOLUTIONS HERE</div>
+        <div className=" flex flex-row gap-5 h-[100vh]">
+          {productionData.slice(0, 6).map((data, index) => {
+            return <ProductionCard key={index} cardData={data} />;
+          })}
+        </div>
+        <div className="text-HeadingColor w-3/5 text-9xl">
+          ALL IT SOLUTIONS HERE
         </div>
       </section>
     </div>
