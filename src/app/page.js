@@ -9,6 +9,7 @@ import LatestNews from "./components/modules/LatestNews";
 import OurClients from "./components/modules/OurClients";
 import Footer from "./components/partials/Footer";
 import ImageSlider from "./components/ImageSlider";
+import HeroSection from "./components/modules/HeroSection";
 
 export default function Home() {
   return (
@@ -16,10 +17,10 @@ export default function Home() {
       <section className="navbar">
      <Navbar/>
       </section>
-      {/* <section>
-        <ImageSlider/>
-      </section> */}
       <section>
+        <HeroSection/>
+      </section>
+      <section className="static">
         <AboutUs/>
       </section>
       <section>
