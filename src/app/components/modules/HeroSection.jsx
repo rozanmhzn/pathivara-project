@@ -13,14 +13,14 @@ const HeroSection = () => {
 
   const settings = {
     infinite: true,
-    speed: 100,
+    speed: 1000,
     slidesToShow: 1,
     slidesToScroll: 1,
     arrows: false, // Hide default arrows since we're using custom buttons
     autoplay: true,
     autoplaySpeed: 5000,
     beforeChange: (oldIndex, newIndex) => setCurrentSlide(newIndex),
-    // fade: true,
+    fade: true,
   };
 
   const nextSlide = () => {
@@ -32,7 +32,6 @@ const HeroSection = () => {
   };
 
   return (
-    
     <div className="absolute top-0 h-[100vh] w-[70vw] left-[15%] text-black cursor-pointer">
       <Slider ref={sliderRef} {...settings}>
         {productionData.map((slide, index) => (
@@ -42,9 +41,8 @@ const HeroSection = () => {
               alt={`Slide ${index}`}
               className="image-back absolute h-[100vh] w-full"
               objectFit="contain"
-             
             />
-            <section className="relative contain-front mt-40">
+            <section className="relative contain-front mt-40  bg-black bg-opacity-50">
               <span className="ml-56 text-xl text-white font-medium">
                 &bull; Production
               </span>
