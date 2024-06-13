@@ -32,7 +32,7 @@ const HeroSection = () => {
   };
 
   return (
-    <div className="absolute top-0 h-[100vh] w-[70vw] left-[15%] text-black cursor-pointer">
+    <div className="absolute top-0 h-[100vh] w-[60vw] left-[20%] text-black cursor-pointer">
       <Slider ref={sliderRef} {...settings}>
         {productionData.map((slide, index) => (
           <div key={index} className="relative h-[100vh]">
@@ -42,40 +42,36 @@ const HeroSection = () => {
               className="image-back absolute h-[100vh] w-full"
               objectFit="contain"
             />
-            <section className="relative contain-front mt-40  bg-black bg-opacity-50">
-              <span className="ml-56 text-xl text-white font-medium">
-                &bull; Production
-              </span>
-              <section className="flex flex-col ml-24 mt-4 gap-5">
-                <span className="text-6xl text-HeadingColor font-bold uppercase">
-                  {slide.title}
-                </span>
-                <span className="w-[72%] text-textColor text-lg font-medium">
-                  {slide.description}
-                </span>
-                <button className="w-24 text-textColor text-sm uppercase font-medium">
-                  View Case
-                </button>
-              </section>
-              <footer className="mx-24 mt-36 flex justify-between items-center text-textColor text-xl font-bold">
-                <section className="flex items-center w-20">
-                  <div className="mr-6 semi-circle-l flex">
-                    <button className="ml-3" onClick={prevSlide}>
-                      {"<-"}
-                    </button>
-                  </div>
-                  {slide.footerLeft}
+            <section className="relative contain-front bg-black bg-opacity-50 h-[100vh]">
+              <div className="pt-52">
+                <span className="ml-96 text-2xl text-white font-medium">&bull; Production</span>
+                <section className="flex flex-col ml-24 mt-7 gap-5">
+                  <span className="text-7xl text-HeadingColor font-bold uppercase">{slide.title}</span>
+                  <span className="w-[72%] text-textColor text-lg font-medium">{slide.description}</span>
+                  <button className="w-24 text-textColor text-sm uppercase font-medium">View Case</button>
                 </section>
-                <section>{`${currentSlide + 1}/${
-                  productionData.length
-                }`}</section>
-                <section className="flex items-center">
-                  {slide.footerRight}
-                  <div className="ml-6 semi-circle-r flex">
-                    <button onClick={nextSlide}>{"->"}</button>
+                <footer className="absolute bottom-4  text-textColor text-2xl font-bold w-full">
+                  <div className="flex justify-evenly px-16 items-end">
+                    <section className="flex items-end  w-80">
+                      <div className="mr-6 semi-circle-l flex justify-start">
+                        <button className="ml-3" onClick={prevSlide}>
+                          {"<-"}
+                        </button>
+                      </div>
+                      <span>{slide.footerLeft}</span>
+                    </section>
+                    <section>{`${currentSlide + 1}/${productionData.length}`}</section>
+                    <section className="flex items-end justify-end w-80">
+                      {slide.footerRight}
+                      <div className="ml-6 semi-circle-r flex justify-start">
+                        <button onClick={nextSlide} className="w-8">
+                          {"->"}
+                        </button>
+                      </div>
+                    </section>
                   </div>
-                </section>
-              </footer>
+                </footer>
+              </div>
             </section>
           </div>
         ))}
