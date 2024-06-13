@@ -52,19 +52,19 @@ const HeroSection = () => {
                 </section>
                 <footer className="absolute bottom-4  text-textColor text-2xl font-bold w-full">
                   <div className="flex justify-evenly px-16 items-end">
-                    <section className="flex items-end  w-80">
-                      <div className="mr-6 semi-circle-l flex justify-start">
+                    <section className="flex items-center justify-start  w-80">
+                      <div className="mr-6 semi-circle-l  w-8 flex justify-start">
                         <button className="ml-3" onClick={prevSlide}>
                           {"<-"}
                         </button>
                       </div>
                       <span>{slide.footerLeft}</span>
                     </section>
-                    <section>{`${currentSlide + 1}/${productionData.length}`}</section>
-                    <section className="flex items-end justify-end w-80">
+                    <section>{`0${currentSlide + 1}/${productionData.length}`}</section>
+                    <section className="flex items-center justify-end w-80">
                       {slide.footerRight}
-                      <div className="ml-6 semi-circle-r flex justify-start">
-                        <button onClick={nextSlide} className="w-8">
+                      <div className="ml-6 semi-circle-r flex justify-start items-end">
+                        <button onClick={nextSlide} className="w-8 pr-2 pb-2">
                           {"->"}
                         </button>
                       </div>
