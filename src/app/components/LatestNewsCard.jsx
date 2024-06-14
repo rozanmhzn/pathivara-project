@@ -4,7 +4,7 @@ import AI from "../assets/AI.png";
 
 const LatestNewsCard = () => {
   return (
-    <div className="flex flex-col mr-10 w-[36rem] h-[35rem] bg-bgColor ">
+    <div className="flex flex-col mr-10 w-[30rem] h-[35rem] bg-bgColor ">
       <div className="w-full h-full relative zoom-container">
         <Image alt="News Image" src={AI} fill={true} className="rounded-sm cursor-pointer zoom-image" />
       </div>

@@ -99,3 +99,69 @@ body {
 .relative .h-full .flex {
   z-index: 3; /* Ensure text is above everything else */
 }
+
+.cta {
+  position: relative;
+  padding: 12px 18px;
+  transition: all 0.4s ease;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.cta:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  border-radius: 50px;
+  background: #212222;
+  width: 45px;
+  height: 45px;
+  transition: all 0.4s ease;
+}
+
+.cta span {
+  position: relative;
+  font-weight: 200;
+  letter-spacing: 0.05em;
+  transform: translateX(-5px);
+  transition: all 1s ease;
+  color: #f3f3f3;
+}
+
+.cta svg {
+  position: relative;
+  top: 0;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke: #f3f3f3;
+  stroke-width: 2;
+  transform: translateX(-5px);
+  transition: all 1s ease;
+}
+
+.cta:hover:before {
+  width: 100%;
+  background: #212222;
+}
+
+.cta:hover svg {
+  transform: translateX(0);
+}
+.cta:hover span {
+  transform: translateX(0);
+}
+
+.cta span {
+  position: relative;
+  font-weight: 200;
+  letter-spacing: 0.05em;
+  color: #f3f3f3;
+}
+
+.cta:active {
+  transform: scale(0.95);
+}

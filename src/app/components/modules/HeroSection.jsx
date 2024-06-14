@@ -8,6 +8,7 @@ import "slick-carousel/slick/slick-theme.css";
 import { productionData } from "@/app/constant/productionData";
 import { FaArrowRightArrowLeft } from "react-icons/fa6";
 import { FaArrowCircleRight, FaArrowLeft, FaArrowRight } from "react-icons/fa";
+import CommonButton from "../CommonButton";
 
 const HeroSection = () => {
   const sliderRef = useRef(null);
@@ -50,7 +51,7 @@ const HeroSection = () => {
                 <section className="flex flex-col ml-24 mt-7 gap-5">
                   <span className="text-7xl text-HeadingColor font-bold uppercase">{slide.title}</span>
                   <span className="w-[72%] text-textColor text-lg font-medium">{slide.description}</span>
-                  <button className="w-24 text-textColor text-sm uppercase font-medium">View Case</button>
+                  <CommonButton heading={"View case"} />
                 </section>
                 <footer className="absolute bottom-4  text-textColor text-2xl font-bold w-full">
                   <div className="flex justify-evenly px-16 items-end">
