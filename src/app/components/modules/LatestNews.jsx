@@ -1,27 +1,24 @@
-import React from 'react'
-import LatestNewsCard from '../LatestNewsCard';
-
-
+import React from "react";
+import LatestNewsCard from "../LatestNewsCard";
+import BackgroundText from "../BackgroundText";
 
 const LatestNews = () => {
   return (
     <div className="mt-5">
       <section>
-        <span className="lg:text-7xl md:text-6xl text-4xl font-bold text-bgColor ml-7">
-          LATEST NEWS
-        </span>
+        <BackgroundText text="LATEST NEWS" />
       </section>
-      <section className='flex flex-col flex-wrap gap-5 items-center'>
-        <span className='text-HeadingColor text-4xl font-semibold'>LATEST AND GREATEST POST</span>
-        <span className='text-textColor'>LATEST THINKING</span>
+      <section className="flex flex-col flex-wrap gap-5 items-center">
+        <span className="text-HeadingColor text-4xl font-semibold">LATEST AND GREATEST POST</span>
+        <span className="text-textColor">LATEST THINKING</span>
       </section>
-      <section className='grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-5 mt-10 ml-7'>
-        <LatestNewsCard/>
-        <LatestNewsCard/>
-        <LatestNewsCard/>
+      <section className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-5 mt-10 ml-7">
+        <LatestNewsCard />
+        <LatestNewsCard />
+        <LatestNewsCard />
       </section>
     </div>
   );
-}
+};
 
-export default LatestNews
+export default LatestNews;

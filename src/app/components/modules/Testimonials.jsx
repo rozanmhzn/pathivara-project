@@ -8,6 +8,7 @@ import ProductionCard from "../ProductionCard";
 import styled, { createGlobalStyle } from "styled-components";
 import React from "react";
 import HoriztionalScroll from "../../components/horiztionalScroll";
+import BackgroundText from "../BackgroundText";
 
 const Main = styled.main``;
 const GlobalStyle = createGlobalStyle`
@@ -42,21 +43,6 @@ const CardsContainer = styled.div`
   align-items: center;
 `;
 
-const SampleCard = styled.div`
-  overflow-y: hidden;
-  position: relative;
-  height: 300px;
-  width: 500px;
-  background-color: #111f30;
-  margin-right: 75px;
-  flex-shrink: 0;
-`;
-
-const SampleCards = React.memo(() =>
-  Array(5)
-    .fill(0)
-    .map((_e, i) => <SampleCard key={`sampleCard-${i}`} />)
-);
 const Testimonials = () => {
   return (
     <div className="mt-10">
@@ -65,10 +51,7 @@ const Testimonials = () => {
           <span className="bg-white p-5 rounded-full text-black">PLAY</span>
         </Link>
       </section>
-
-      <section className="lg:text-7xl md:text-6xl text-4xl font-bold text-bgColor ml-7">
-        <span>TESTIMONIALS</span>
-      </section>
+      <BackgroundText text="TESTIMONIALS" />
       <section className=" mx-5 bg-bgColor p-7">
         <div className="flex flex-col gap-5 items-center">
           <span className="text-lg font-semibold">Best IT Company in Nepal</span>
@@ -103,7 +86,7 @@ const Testimonials = () => {
         <HoriztionalScroll>
           <CardsContainer>
             <section className="flex mt-10 mx-5 gap-5 w-full overflow-y-hidden relative h-[90vh] ">
-              <div className="text-HeadingColor w-3/5 text-9xl">
+              <div className="text-HeadingColor w-3/5 text-[10rem]">
                 <span>WHAT WE CAN DO</span>
               </div>
 
@@ -112,7 +95,7 @@ const Testimonials = () => {
                   return <ProductionCard key={index} cardData={data} />;
                 })}
               </div>
-              <div className="text-HeadingColor w-3/5 text-9xl">ALL IT SOLUTIONS HERE</div>
+              <div className="text-HeadingColor w-3/5 text-[10rem]">ALL IT SOLUTIONS HERE</div>
             </section>
           </CardsContainer>
         </HoriztionalScroll>

@@ -47,15 +47,16 @@ body {
 }
 
 .semi-circle-r {
-  height: 50px; /* Half of the width to make a semi-circle */
+  width: 25px;
+  height: 40px; /* Half of the width to make a semi-circle */
   border: 1px solid #d3d7da;
   border-top-right-radius: 500px;
   border-bottom-right-radius: 500px;
   border-left: 0;
 }
 .semi-circle-l {
-  width: 30px;
-  height: 50px; /* Half of the width to make a semi-circle */
+  width: 25px;
+  height: 40px; /* Half of the width to make a semi-circle */
   border: 1px solid #d3d7da;
   border-top-left-radius: 500px;
   border-bottom-left-radius: 500px;
@@ -67,4 +68,34 @@ body {
 }
 .contain-front {
   z-index: 1;
+}
+
+.zoom-container {
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+}
+
+.zoom-container:hover .zoom-image {
+  transform: scale(1.2);
+  transition: transform 0.7s ease;
+}
+
+.zoom-image {
+  transition: transform 0.7s ease;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 1; /* Ensure image is below the text */
+}
+
+.bg-opacity-50 {
+  z-index: 2; /* Ensure the background overlay is above the image */
+}
+
+.relative .h-full .flex {
+  z-index: 3; /* Ensure text is above everything else */
 }
