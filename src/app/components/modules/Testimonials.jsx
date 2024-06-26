@@ -85,12 +85,12 @@ const Testimonials = () => {
       <HorizontalSection>
         <HoriztionalScroll>
           <CardsContainer>
-            <section className="flex mt-10 mx-5 gap-5 w-full overflow-y-hidden relative h-[90vh] ">
+            <section className="flex mt-10 mx-5 gap-10 w-full overflow-y-hidden relative h-[90vh] ">
               <div className="text-HeadingColor w-3/5 text-[10rem]">
                 <span>WHAT WE CAN DO</span>
               </div>
 
-              <div className=" flex flex-row gap-5 h-[100vh]">
+              <div className=" flex flex-row gap-16 h-[100vh]">
                 {productionData.slice(0, 6).map((data, index) => {
                   return <ProductionCard key={index} cardData={data} />;
                 })}

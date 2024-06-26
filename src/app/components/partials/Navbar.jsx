@@ -86,8 +86,6 @@
 
 // export default Navbar;
 
-
-
 // "use client";
 
 // import React, { useState, useEffect } from "react";
@@ -164,7 +162,6 @@
 
 // export default Navbar;
 
-
 "use client";
 
 import React, { useState, useEffect } from "react";
@@ -197,7 +194,7 @@ const Navbar = () => {
 
   return (
     <>
-      <div className="flex justify-between items-center mx-20 mt-10">
+      <div className="relative flex justify-between items-center mx-20 mt-10 z-10">
         <div className="text-white">LOGO LOGO LOGO</div>
         <div
           className="cursor-pointer flex gap-3 text-lg text-white"
@@ -219,31 +216,20 @@ const Navbar = () => {
           <div className="text-white mt-10 w-full">
             <div className="flex justify-between w-full px-20">
               <div className="text-white">LOGO LOGO LOGO</div>
-              <div
-                className="cursor-pointer flex gap-3 text-lg text-white"
-                onClick={toggleMenu}
-              >
+              <div className="cursor-pointer flex gap-3 text-lg text-white" onClick={toggleMenu}>
                 <FaTimes size={24} />
                 <span>Close</span>
               </div>
             </div>
             <span className="text-9xl text-bgColor font-bold absolute mt-40 ml-10">MENU</span>
             <div className="relative ml-10">
-            <ul className="text-4xl space-y-6 mt-20">
-              <li className="cursor-pointer hover:text-gray-400">
-                01. About Us
-              </li>
-              <li className="cursor-pointer hover:text-gray-400">
-                02. Careers
-              </li>
-              <li className="cursor-pointer hover:text-gray-400">03. Blogs</li>
-              <li className="cursor-pointer hover:text-gray-400">
-                04. Contact Us
-              </li>
-              <li className="cursor-pointer hover:text-gray-400">
-                05. Our Team
-              </li>
-            </ul>
+              <ul className="text-4xl space-y-6 mt-20">
+                <li className="cursor-pointer hover:text-gray-400">01. About Us</li>
+                <li className="cursor-pointer hover:text-gray-400">02. Careers</li>
+                <li className="cursor-pointer hover:text-gray-400">03. Blogs</li>
+                <li className="cursor-pointer hover:text-gray-400">04. Contact Us</li>
+                <li className="cursor-pointer hover:text-gray-400">05. Our Team</li>
+              </ul>
             </div>
           </div>
         </div>

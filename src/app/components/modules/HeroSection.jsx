@@ -16,6 +16,7 @@ const HeroSection = () => {
 
   const settings = {
     infinite: true,
+    fade: true,
     speed: 1000,
     slidesToShow: 1,
     slidesToScroll: 1,
@@ -35,15 +36,15 @@ const HeroSection = () => {
   };
 
   return (
-    <div className="absolute top-0 h-[100vh] w-[60vw] left-[20%] text-black cursor-pointer">
+    <div className="absolute top-0 h-[100vh] w-[98.7vw]  text-black cursor-pointer z-0">
       <Slider ref={sliderRef} {...settings}>
         {productionData.map((slide, index) => (
           <div key={index} className="relative h-[100vh]">
             <Image
               src={slide.image}
               alt={`Slide ${index}`}
-              className="image-back absolute h-[100vh] w-full"
-              objectFit="contain"
+              className="image-back absolute h-full w-full"
+              objectFit="fill"
             />
             <section className="relative contain-front bg-black bg-opacity-50 h-[100vh]">
               <div className="pt-52">

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef, useState } from "react";
 import ssi from "../../assets/SSI.png";
 import ma from "../../assets/MA.png";
 import namaste from "../../assets/Namaste.png";
@@ -9,8 +9,20 @@ import pig from "../../assets/Pid.png";
 
 import Image from "next/image";
 import BackgroundText from "../BackgroundText";
+import Slider from "react-slick";
 
 const OurClients = () => {
+  const sliderRef = useRef(null);
+  const [currentSlide, setCurrentSlide] = useState(0);
+
+  const settings = {
+    focusOnSelect: true,
+    infinite: true,
+    slidesToShow: 5,
+    slidesToScroll: 1,
+    speed: 500,
+  };
+
   return (
     <div className="mt-10">
       <section className="flex flex-col ">
@@ -21,13 +33,29 @@ const OurClients = () => {
         <div className="flex justify-center items-center">
           <Image src={ssi} />
         </div>
-        <div className="flex gap-10 flex-wrap justify-between mx-10 mt-5">
-          <Image src={ma} />
-          <Image src={namaste} />
-          <Image src={tri} />
-          <Image src={jg} />
-          <Image src={np} />
-          <Image src={pig} />
+        <div className="slider-container">
+          <div className="mx-20 mt-5">
+            <Slider {...settings}>
+              <div>
+                <Image src={ma} />
+              </div>
+              <div>
+                <Image src={namaste} />
+              </div>
+              <div>
+                <Image src={tri} />
+              </div>
+              <div>
+                <Image src={jg} />
+              </div>
+              <div>
+                <Image src={np} />
+              </div>
+              <div>
+                <Image src={pig} />
+              </div>
+            </Slider>
+          </div>
         </div>
       </section>
     </div>

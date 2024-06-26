@@ -16,7 +16,7 @@ const OurServices = () => {
         </section>
       </div>
       {/* Card-Section */}
-      <section className="card mt-5 mx-5 gap-5 grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-1">
+      <section className="card mt-5 mx-5 gap-5 grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-1 ">
         {cardData?.map((data, index) => {
           return (
             <div key={index}>
