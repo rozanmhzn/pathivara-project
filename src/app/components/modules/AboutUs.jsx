@@ -1,8 +1,7 @@
-
-import Link from 'next/link';
-import React from 'react'
+import Link from "next/link";
+import React from "react";
 import { IoIosArrowDropright } from "react-icons/io";
-
+import CommonButton from "../CommonButton";
 
 const AboutUs = () => {
   return (
@@ -15,24 +14,19 @@ const AboutUs = () => {
       </section>
       <section className="text-xl lg:w-4/5 sm:w-full md:w-3/4">
         <span>
-          Welcome to Pathivara Innovations Pvt. Ltd, a dynamic and
-          forward-thinking technology company at the forefront of innovation in
-          the digital landscape. With a passion for cutting-edge solutions and a
-          commitment to excellence, we specialize in a comprehensive range of
-          services designed to empower businesses and organizations in today's
-          rapidly evolving digital world.
+          Welcome to Pathivara Innovations Pvt. Ltd, a dynamic and forward-thinking technology company at the forefront
+          of innovation in the digital landscape. With a passion for cutting-edge solutions and a commitment to
+          excellence, we specialize in a comprehensive range of services designed to empower businesses and
+          organizations in today's rapidly evolving digital world.
         </span>
       </section>
-      <section className='lg:w-3/5 sm:w-full justify-items-center ml-5 lg:text-lg sm:text-sm text-textColor'>
-        <Link href={'/about-us'}>
-        <button className="w-1/2 bg-black p-3 rounded-full hover:bg- flex justify-center items-center gap-3">
-            <IoIosArrowDropright size={20}/>
-            <span>Discover More</span>
-        </button>
+      <section className="lg:w-3/5 sm:w-full justify-items-center ml-5 lg:text-lg sm:text-sm text-textColor">
+        <Link href={"/about-us"}>
+          <CommonButton heading={"Discover More"} />
         </Link>
       </section>
     </div>
   );
-}
+};
 
-export default AboutUs
+export default AboutUs;

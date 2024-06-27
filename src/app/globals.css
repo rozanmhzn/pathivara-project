@@ -18,12 +18,7 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background: linear-gradient(to bottom, transparent, rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
 }
 
 @layer utilities {
@@ -32,15 +27,141 @@ body {
   }
 }
 
-/* .HeadingColor{
-  color : #F79322
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
 }
 
-.textColor{
-  color: #DDDDDD;
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(to bottom, transparent, rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
 }
 
-.buttonColor{
-  color: #FFFFFF;
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
 }
- */
+
+.semi-circle-r {
+  width: 25px;
+  height: 40px; /* Half of the width to make a semi-circle */
+  border: 1px solid #d3d7da;
+  border-top-right-radius: 500px;
+  border-bottom-right-radius: 500px;
+  border-left: 0;
+}
+.semi-circle-l {
+  width: 25px;
+  height: 40px; /* Half of the width to make a semi-circle */
+  border: 1px solid #d3d7da;
+  border-top-left-radius: 500px;
+  border-bottom-left-radius: 500px;
+  border-right: 0;
+}
+
+.image-back {
+  z-index: 0;
+}
+.contain-front {
+  z-index: 1;
+}
+
+.zoom-container {
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+}
+
+.zoom-container:hover .zoom-image {
+  transform: scale(1.2);
+  transition: transform 0.7s ease;
+}
+
+.zoom-image {
+  transition: transform 0.7s ease;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 1; /* Ensure image is below the text */
+}
+
+.bg-opacity-50 {
+  z-index: 2; /* Ensure the background overlay is above the image */
+}
+
+.relative .h-full .flex {
+  z-index: 3; /* Ensure text is above everything else */
+}
+
+.cta {
+  position: relative;
+  padding: 12px 18px;
+  transition: all 0.4s ease;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.cta:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  border-radius: 50px;
+  background: #212222;
+  width: 45px;
+  height: 45px;
+  transition: all 0.4s ease;
+}
+
+.cta span {
+  position: relative;
+  font-weight: 200;
+  letter-spacing: 0.05em;
+  transform: translateX(-5px);
+  transition: all 1s ease;
+  color: #f3f3f3;
+}
+
+.cta svg {
+  position: relative;
+  top: 0;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke: #f3f3f3;
+  stroke-width: 2;
+  transform: translateX(-5px);
+  transition: all 1s ease;
+}
+
+.cta:hover:before {
+  width: 100%;
+  background: #212222;
+}
+
+.cta:hover svg {
+  transform: translateX(0);
+}
+.cta:hover span {
+  transform: translateX(0);
+}
+
+.cta span {
+  position: relative;
+  font-weight: 200;
+  letter-spacing: 0.05em;
+  color: #f3f3f3;
+}
+
+.cta:active {
+  transform: scale(0.95);
+}
