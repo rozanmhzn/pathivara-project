@@ -12,7 +12,7 @@ const LatestNews = () => {
         <span className="text-HeadingColor text-4xl font-semibold">LATEST AND GREATEST POST</span>
         <span className="text-textColor">LATEST THINKING</span>
       </section>
-      <section className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-5 mt-10 ml-7">
+      <section className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-5 mt-10 lg:ml-7 ml-4">
         <LatestNewsCard />
         <LatestNewsCard />
         <LatestNewsCard />

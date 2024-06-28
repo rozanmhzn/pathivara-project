@@ -18,7 +18,7 @@ const TeamCard = ({data}) => {
 
   return (
     <div
-      className="w-96 relative bg-cover"
+      className="lg:w-96 w-80 relative bg-cover"
       onMouseEnter={() => onMouseHover()}
       onMouseLeave={() => onMouseHover()}
     >

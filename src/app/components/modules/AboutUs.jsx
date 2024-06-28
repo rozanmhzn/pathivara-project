@@ -12,7 +12,7 @@ const AboutUs = () => {
       <section className="text-base font-semibold text-HeadingColor">
         <span>FROM A SMALL STUDIO TO A FULL-CYCLE CREATIVE AGENCY.</span>
       </section>
-      <section className="text-xl lg:w-4/5 sm:w-full md:w-3/4">
+      <section className="text-xl lg:w-4/5 sm:w-full md:w-3/4 text-justify">
         <span>
           Welcome to Pathivara Innovations Pvt. Ltd, a dynamic and forward-thinking technology company at the forefront
           of innovation in the digital landscape. With a passion for cutting-edge solutions and a commitment to

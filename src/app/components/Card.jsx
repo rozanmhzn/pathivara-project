@@ -10,7 +10,8 @@ const Card = ({ data }) => {
         <span>{data?.description}</span>
       </section>
       <section className="cursor-pointer ml-2">
-        <buton>Read more &#x25CB;</buton>
+        {/* <buton>Read more &#x25CB;</buton> */}
+        <buton>{data?.more} &#x25CB;</buton>
       </section>
     </div>
   );

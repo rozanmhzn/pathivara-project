@@ -21,7 +21,7 @@ const OurMissions = () => {
           <section className="text-HeadingColor text-4xl">
             <span>OUR MISSION</span>
           </section>
-          <section className="text-xl text-textColor font-medium">
+          <section className="text-xl text-textColor font-medium text-justify">
             <span>
               At Pathivara Innovations Pvt. Ltd, our mission is to empower
               businesses and individuals with cutting-edge technology solutions
