@@ -17,14 +17,14 @@ const HeroSection = () => {
   const settings = {
     infinite: true,
     fade: true,
-    speed: 1000,
+    speed: 2500,
     slidesToShow: 1,
     slidesToScroll: 1,
     arrows: false, // Hide default arrows since we're using custom buttons
     autoplay: true,
     autoplaySpeed: 5000,
     beforeChange: (oldIndex, newIndex) => setCurrentSlide(newIndex),
-    fade: true,
+    //fade: true,
   };
 
   const nextSlide = () => {
