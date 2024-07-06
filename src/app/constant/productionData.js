@@ -8,7 +8,7 @@ import GD from '../assets/GD.jpg'
 export const productionData = [
   {
     image: AI,
-    title: "AI",
+    title: "Artificial Intelligence",
     description:
       "Our Vision for Artificial Intelligence At Pathivara Innovations Pvt Ltd, our vision is to be at the forefront of technological innovation,",
     footerLeft: "Digital Architectural Engineering",

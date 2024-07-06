@@ -49,7 +49,7 @@ const AboutUs = () => {
           <span className="text-4xl font-bold text-HeadingColor">
             OUR STORY
           </span>
-          <span className="w-11/12 text-lg text-textColor font-medium text-justify">
+          <span className="w-full sm:w-11/12 text-lg text-textColor font-medium text-justify">
             Pathivara Innovation is a cutting-edge IT company at the forefront
             of technological advancement. With a relentless commitment to
             innovation, we specialize in providing comprehensive solutions that
@@ -110,7 +110,7 @@ const AboutUs = () => {
         <OurTeam />
       </section>
 
-      <section className="mt-10">
+      {/* <section className="mt-10">
         <div className="flex flex-col justify-center items-center">
           <span className="text-textColor text-lg font-medium">
             &bull; TESTIMONIALS
@@ -157,7 +157,7 @@ const AboutUs = () => {
             </div>
           </section>
         </div>
-      </section>
+      </section> */}
     </div>
   );
 };

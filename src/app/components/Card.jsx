@@ -1,8 +1,9 @@
+import Link from "next/link";
 import React from "react";
 
 const Card = ({ data }) => {
   return (
-    <div className="lg:w-80 sm:w-full md:w-60 p-5 h-80 md:h-96 flex flex-col gap-6 bg-bgColor rounded-md">
+    <div className="lg:w-80 sm:w-full md:w-60 p-5 h-96 md:h-96 flex flex-col gap-3 bg-bgColor rounded-md justify-center items-center">
       <section className="text-textColor text-2xl font-bold text-center mt-10">
         <span>{data?.title}</span>
       </section>
@@ -11,7 +12,9 @@ const Card = ({ data }) => {
       </section>
       <section className="cursor-pointer ml-2">
         {/* <buton>Read more &#x25CB;</buton> */}
+        <Link href={`/portfolio/${data?.slug}`}>
         <buton>{data?.more} &#x25CB;</buton>
+        </Link>
       </section>
     </div>
   );

@@ -4,7 +4,8 @@ import mission from "../../assets/mission.jpg"
 
 const OurMissions = () => {
   return (
-    <div className="mt-10 mb-10 lg:flex lg:flex-row lg:gap-10 mx-10 sm:flex sm:flex-col sm:gap-5">
+    // <div className="mt-10 mb-10 lg:flex lg:flex-row lg:gap-10 mx-10 sm:flex sm:flex-col sm:gap-5">
+    <div className="mt-10 mb-10 mx-10 flex flex-col gap-5 md:flex-row">
       <section className="">
         <Image
           src={mission}
@@ -17,11 +18,12 @@ const OurMissions = () => {
       </section>
 
       <section className="">
-        <div className="lg:w-4/5 grid gap-5 sm:w-full">
+        {/* <div className="lg:w-4/5 grid gap-5 sm:w-full"> */}
+        <div className="grid gap-5 w-full">
           <section className="text-HeadingColor text-4xl">
             <span>OUR MISSION</span>
           </section>
-          <section className="text-xl text-textColor font-medium text-justify">
+          <section className="text-xl text-textColor font-medium text-left">
             <span>
               At Pathivara Innovations Pvt. Ltd, our mission is to empower
               businesses and individuals with cutting-edge technology solutions

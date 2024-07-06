@@ -30,12 +30,15 @@ const OurClients = () => {
         <span className=" text-lg text-HeadingColor font-medium w-full text-center">YOUR SUCCESS, OUR REPUTATION</span>
       </section>
       <section className="mt-10">
-        <div className="flex justify-center items-center">
+        {/* <div className="flex justify-center items-center">
           <Image src={ssi} />
-        </div>
+        </div> */}
         <div className="slider-container">
-          <div className="mx-20 mt-5">
+          <div className=" mx-20 mt-5">
             <Slider {...settings}>
+              <div>
+                <Image src={ssi} />
+              </div>
               <div>
                 <Image src={ma} />
               </div>

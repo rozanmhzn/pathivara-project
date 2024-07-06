@@ -6,11 +6,19 @@ import AI from "../../app/assets/AI.png";
 import Image from 'next/image';
 import { FaLinkedinIn, FaFacebookF } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa";
+import { useRouter } from 'next/navigation';
 
 
 
 const TeamCard = ({data}) => {
     const [isEnter, setIsEnter] = useState(false);
+    const router = useRouter();
+    
+    const onClick= (name)=>{
+      router.push(`/our-team/${name}`)
+      if(name === 'Apurva Nepal'){
+      }
+    }
 
     const onMouseHover = () =>{
         setIsEnter(!isEnter);
@@ -18,11 +26,13 @@ const TeamCard = ({data}) => {
 
   return (
     <div
-      className="lg:w-96 w-80 relative bg-cover"
+      // className="lg:w-96 w-80 relative bg-cover"
+      className="w-80 relative bg-cover cursor-pointer"
       onMouseEnter={() => onMouseHover()}
       onMouseLeave={() => onMouseHover()}
+      onClick={()=> onClick(data?.name)}
     >
-      <Image src={AI} alt="ProfileImage" className="w-full h-full " />
+      <Image src={data?.image} alt="ProfileImage" className="w-full h-[20rem]" objectFit='fill' />
       <div
         className="absolute  bottom-0 left-0 w-full h-24 flex flex-col 
         gap-2 items-center justify-center backdrop-blur-sm"

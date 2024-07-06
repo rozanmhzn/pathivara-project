@@ -9,6 +9,7 @@ import { productionData } from "@/app/constant/productionData";
 import { FaArrowRightArrowLeft } from "react-icons/fa6";
 import { FaArrowCircleRight, FaArrowLeft, FaArrowRight } from "react-icons/fa";
 import CommonButton from "../CommonButton";
+import Link from "next/link";
 
 const HeroSection = () => {
   const sliderRef = useRef(null);
@@ -40,7 +41,7 @@ const HeroSection = () => {
       <Slider ref={sliderRef} {...settings}>
         {productionData.map((slide, index) => (
           <div key={index} className="relative h-[100vh]">
-            <Image
+           <Image
               src={slide.image}
               alt={`Slide ${index}`}
               className="image-back absolute h-full w-full"
@@ -48,11 +49,13 @@ const HeroSection = () => {
             />
             <section className="relative contain-front bg-black bg-opacity-50 h-[100vh]">
               <div className="pt-52">
-                <span className="ml-96 text-2xl text-white font-medium">&bull; Production</span>
+                {/* <span className="ml-96 text-2xl text-white font-medium">&bull; Production</span> */}
                 <section className="flex flex-col ml-24 mt-7 gap-5">
                   <span className="text-7xl text-HeadingColor font-bold uppercase">{slide.title}</span>
                   <span className="w-[72%] text-textColor text-lg font-medium">{slide.description}</span>
+                 <Link href={`/portfolio/${slide.title}`}>
                   <CommonButton heading={"View case"} />
+                 </Link>
                 </section>
                 <footer className="absolute bottom-4  text-textColor text-2xl font-bold w-full">
                   <div className="flex justify-evenly px-16 items-end">

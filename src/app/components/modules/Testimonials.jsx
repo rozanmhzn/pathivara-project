@@ -54,10 +54,12 @@ const Testimonials = () => {
       <BackgroundText text="TESTIMONIALS" />
       <section className=" mx-5 bg-bgColor p-7">
         <div className="flex flex-col gap-5 items-center">
-          <span className="text-lg font-semibold">Best IT Company in Nepal</span>
+          <span className="text-lg font-semibold">
+            Best IT Company in Nepal
+          </span>
           <span className="text-textColor text-xl w-3/4">
-            I have been using LMS for my engineering college which was developed by Pathivara Innovations. Very happy
-            with their product and support.
+            I have been using LMS for my engineering college which was developed
+            by Pathivara Innovations. Very happy with their product and support.
           </span>
           <section className="mt-5 flex justify-center items-center gap-3">
             <Image className="rounded-full" width={50} height={50} src={user} />
@@ -79,10 +81,12 @@ const Testimonials = () => {
         </div>
         <div className="grid justify-items-center">
           <span className="text-sm font-semibold">WHAT PEOPLE ARE SAYING</span>
-          <span className="text-sm text-textColor font-semibold">TESTIMONIALS</span>
+          <span className="text-sm text-textColor font-semibold">
+            TESTIMONIALS
+          </span>
         </div>
       </section>
-      <HorizontalSection>
+      {/* <HorizontalSection>
         <HoriztionalScroll>
           <CardsContainer>
             <section className="flex mt-10 mx-5 gap-10 w-full overflow-y-hidden relative h-[90vh] ">
@@ -96,6 +100,26 @@ const Testimonials = () => {
                 })}
               </div>
               <div className="text-HeadingColor w-3/5 text-[10rem]">ALL IT SOLUTIONS HERE</div>
+            </section>
+          </CardsContainer>
+        </HoriztionalScroll>
+      </HorizontalSection> */}
+      <HorizontalSection>
+        <HoriztionalScroll>
+          <CardsContainer>
+            <section className="flex mt-10 mx-5 gap-10 w-full overflow-y-hidden relative h-[70vh] md:h-[80vh] lg:h-[90vh] ">
+              <div className="text-HeadingColor w-3/5 text-[7rem] ">
+                <span>WHAT WE CAN DO</span>
+              </div>
+
+              <div className=" flex flex-row gap-16 h-[100vh]">
+                {productionData.slice(0, 6).map((data, index) => {
+                  return <ProductionCard key={index} cardData={data} />;
+                })}
+              </div>
+              <div className="text-HeadingColor w-3/5 text-[7rem]">
+                ALL IT SOLUTIONS HERE
+              </div>
             </section>
           </CardsContainer>
         </HoriztionalScroll>
