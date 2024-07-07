@@ -54,7 +54,7 @@ export default function Home() {
         <section>
           <Footer />
         </section>
-        <section className="side-bar ">
+        <section className="side-bar hidden sm:block">
           <SideNavbar />
         </section>
       </main>

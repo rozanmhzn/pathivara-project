@@ -1,9 +1,10 @@
-import AI from '../assets/AI.png'
-import Training from '../assets/Training.jpg'
-import AD from '../assets/AppDev.png'
-import CC from '../assets/CC.jpg'
-import DM from '../assets/DM.jpg'
-import GD from '../assets/GD.jpg'
+import AI from '../assets/services/AI.png'
+import Training from '../assets/services/Training.jpg'
+import AD from '../assets/services/AppDev.png'
+import CC from '../assets/services/CC.jpg'
+import DM from '../assets/services/DM.jpg'
+import GD from '../assets/services/GD.jpg'
+import WH from '../assets/services/WebHosting.jpg'
 
 export const productionData = [
   {
@@ -52,18 +53,27 @@ export const productionData = [
     description:
       "OUR VISION FOR WEB ELEGANCE ENGINEERING At Pathivara Innovations Pvt Ltd, our vision is to be at the forefront of technological",
     footerLeft: "Digital Marketing",
+    footerRight: "Web Hosting",
+  },
+  {
+    image: WH,
+    title: "Web Hosting",
+    description:
+      "Web hosting makes websites accessible online by storing them on servers provided by hosting companies.",
+    footerLeft: "Graphics Designing",
     footerRight: "IT Audit",
   },
+
   {
     image: AI,
     title: "IT Audit",
     description:
       "OUR VISION FOR IT AUDIT At Pathivara Innovations Pvt Ltd, our vision is to be at the forefront of technological innovation,",
-    footerLeft: "Graphics Designing",
+    footerLeft: "Web Hosting",
     footerRight: "Web Elegance Engineering",
   },
   {
-    image: AI,
+    image: WH,
     title: "Web Elegance Engineering",
     description:
       "OUR VISION FOR WEB ELEGANCE ENGINEERING At Pathivara Innovations Pvt Ltd, our vision is to be at the forefront of technological",
@@ -71,7 +81,7 @@ export const productionData = [
     footerRight: "Digital Architectural Engineering",
   },
   {
-    image: AI,
+    image: CC,
     title: "Digital Architectural Engineering",
     description:
       "OUR VISION FOR WEB ELEGANCE ENGINEERING At Pathivara Innovations Pvt Ltd, our vision is to be at the forefront of technological",

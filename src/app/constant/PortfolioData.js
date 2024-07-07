@@ -1,9 +1,11 @@
-import AI from "../assets/AI.png";
-import Training from "../assets/Training.jpg";
-import AD from "../assets/AppDev.png";
-import CC from "../assets/CC.jpg";
-import DM from "../assets/DM.jpg";
-import GD from "../assets/GD.jpg";
+import AI from "../assets/services/AI.png";
+import Training from "../assets/services/Training.jpg";
+import AD from "../assets/services/AppDev.png";
+import CC from "../assets/services/CC.jpg";
+import DM from "../assets/services/DM.jpg";
+import GD from "../assets/services/GD.jpg";
+import WH from "../assets/services/WebHosting.jpg";
+
 
 export const portfolio = [
   {
@@ -134,7 +136,7 @@ export const portfolio = [
     service: "Web Hosting",
     language: "--- ",
     clients: "-",
-    image: CC,
+    image: WH,
     commitments:
       "At Pathivara Innovations Pvt Ltd, we’re committed to relentless innovation for impact, empowering businesses with cutting-edge solutions, fostering talent for continuous growth, and embracing global collaboration. Our customer-centric approach prioritizes clients’ needs, while our culture of continuous innovation ensures excellence in execution and profitable growth, charting a brighter technological future.",
   },

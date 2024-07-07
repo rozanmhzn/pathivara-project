@@ -2,7 +2,7 @@
 'use client';
 
 import React, { useState } from 'react'
-import AI from "../../app/assets/AI.png";
+// import AI from "../../app/assets/AI.png";
 import Image from 'next/image';
 import { FaLinkedinIn, FaFacebookF } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa";

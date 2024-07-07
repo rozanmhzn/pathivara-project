@@ -1,11 +1,11 @@
 import React, { useRef, useState } from "react";
-import ssi from "../../assets/SSI.png";
-import ma from "../../assets/MA.png";
-import namaste from "../../assets/Namaste.png";
-import tri from "../../assets/Tri.png";
-import jg from "../../assets/JG.png";
-import np from "../../assets/NP.png";
-import pig from "../../assets/Pid.png";
+import ssi from "../../assets/clients/SSI.png";
+import ma from "../../assets/clients/MA.png";
+import namaste from "../../assets/clients/Namaste.png";
+import tri from "../../assets/clients/Tri.png";
+import jg from "../../assets/clients/JG.png";
+import np from "../../assets/clients/NP.png";
+import pig from "../../assets/clients/Pid.png";
 
 import Image from "next/image";
 import BackgroundText from "../BackgroundText";

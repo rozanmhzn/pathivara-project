@@ -86,7 +86,7 @@
 
 import Image from "next/image";
 import React from "react";
-import CC from "../../../assets/CC.jpg";
+// import CC from "../../../assets/CC.jpg";
 
 import { portfolio } from "@/app/constant/PortfolioData";
 import { usePathname } from "next/navigation";

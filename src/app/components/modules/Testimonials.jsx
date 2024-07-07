@@ -111,9 +111,8 @@ const Testimonials = () => {
               <div className="text-HeadingColor w-3/5 text-[7rem] ">
                 <span>WHAT WE CAN DO</span>
               </div>
-
               <div className=" flex flex-row gap-16 h-[100vh]">
-                {productionData.slice(0, 6).map((data, index) => {
+                {productionData.slice(0,7).map((data, index) => {
                   return <ProductionCard key={index} cardData={data} />;
                 })}
               </div>

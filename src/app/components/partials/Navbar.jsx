@@ -244,12 +244,12 @@ const Navbar = () => {
                     01. About Us
                   </li>
                 </Link>
-                <Link href={"#"}>
+                <Link href={"/career"}>
                   <li className="cursor-pointer hover:text-gray-400  mb-5">
                     02. Careers
                   </li>
                 </Link>
-                <Link href={"#"}>
+                <Link href="{/}">
                   <li className="cursor-pointer hover:text-gray-400  mb-5">
                     03. Blogs
                   </li>
