@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import AI from "../../assets/AI.png";
+import AI from "../../assets/services/AI.png";
 import { values } from "@/app/constant/ValuesData";
 import Card from "@/app/components/Card";
 import OurTeam from "../our-team/page";
@@ -9,6 +9,7 @@ import {
   IoMdArrowDroprightCircle,
   IoMdArrowDropleftCircle,
 } from "react-icons/io";
+import Link from "next/link";
 
 const AboutUs = () => {
   return (
@@ -26,7 +27,9 @@ const AboutUs = () => {
             </span>
           </div>
           <div>
+            <Link href={"/contact-us"}>
             <button>Get Started Now</button>
+          </Link>
           </div>
         </div>
       </section>
@@ -41,7 +44,7 @@ const AboutUs = () => {
           }}
         />
       </section>
-      <section className="m-20">
+      <section className="m-5 p-5">
         <div className="flex flex-col gap-5 justify-center items-center p-5">
           <span className="text-xl text-textColor font-semibold">
             &bull; ADVANTAGES

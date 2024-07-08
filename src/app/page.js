@@ -12,6 +12,9 @@ import Footer from "./components/partials/Footer";
 import ImageSlider from "./components/ImageSlider";
 import HeroSection from "./components/modules/HeroSection";
 import { createGlobalStyle } from "styled-components";
+import { useRef } from "react";
+
+
 const GlobalStyle = createGlobalStyle`
   * {
     box-sizing: border-box;
@@ -23,12 +26,22 @@ const GlobalStyle = createGlobalStyle`
   }
 `;
 export default function Home() {
+
+  const latestNewsRef = useRef(null);
+
+  const scrollToSection = (section) => {
+    if (section === "latestNews" && latestNewsRef.current) {
+      latestNewsRef.current.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
+
   return (
     <>
       <GlobalStyle />
       <main>
         <section className="navbar">
-          <Navbar />
+          <Navbar scrollToSection={scrollToSection} />
         </section>
         <section className="h-[100vh]">
           <HeroSection />
@@ -45,7 +58,7 @@ export default function Home() {
         <section>
           <Testimonials />
         </section>
-        <section>
+        <section ref={latestNewsRef}>
           <LatestNews />
         </section>
         <section>
