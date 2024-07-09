@@ -21,50 +21,7 @@ const SideNavbar = () => {
           FOLLOW US
         </div>
       </div>
-      {/* <div className="fixed bottom-0 left-0 mb-5 ml-5 flex flex-col gap-5 items-center text-white">
-        <div className="group flex items-center">
-          <FaLinkedinIn
-            size={20}
-            className="cursor-pointer hover:scale-125 transition-transform duration-200"
-          />
-          <span className="ml-2 opacity-0 group-hover:opacity-100 transition-opacity duration-200">
-            LinkedIn
-          </span>
-        </div>
-        <div className="group flex items-center">
-          <FaTwitter
-            size={20}
-            className="cursor-pointer hover:scale-125 transition-transform duration-200"
-          />
-          <span className="ml-2 opacity-0 group-hover:opacity-100 transition-opacity duration-200">
-            Twitter
-          </span>
-        </div>
-        <div className="group flex items-center">
-          <FaInstagram
-            size={20}
-            className="cursor-pointer hover:scale-125 transition-transform duration-200"
-          />
-          <span className="ml-2 opacity-0 group-hover:opacity-100 transition-opacity duration-200">
-            Instagram
-          </span>
-        </div>
-        <div className="group flex items-center">
-          <FaFacebookF
-            size={20}
-            className="cursor-pointer hover:scale-125 transition-transform duration-200"
-          />
-          <span className="ml-2 opacity-0 group-hover:opacity-100 transition-opacity duration-200">
-            Facebook
-          </span>
-        </div>
-
-        <div className="mt-2 w-px h-16 bg-gray-400"></div>
-
-        <div className="mt-2 tracking-wider text-sm rotate-90 origin-top-left">
-          FOLLOW US
-        </div>
-      </div> */}
+     
     </>
   );
 }

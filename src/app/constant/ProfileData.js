@@ -67,7 +67,7 @@ export const profiles = [
   },
 
   {
-    name: "Utsav",
+    name: "Utsav Gautam",
     title: "Web Designer",
     image: Utsav,
     summary: "",

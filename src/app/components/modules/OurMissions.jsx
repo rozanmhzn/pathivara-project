@@ -4,21 +4,18 @@ import mission from "../../assets/mission.jpg"
 
 const OurMissions = () => {
   return (
-    // <div className="mt-10 mb-10 lg:flex lg:flex-row lg:gap-10 mx-10 sm:flex sm:flex-col sm:gap-5">
     <div className="mt-10 mb-10 mx-10 flex flex-col gap-5 md:flex-row">
       <section className="">
         <Image
           src={mission}
           style={{
             width: "400rem",
-            //height: "200rem",
           }}
           alt="Mission Image"
         />
       </section>
 
       <section className="">
-        {/* <div className="lg:w-4/5 grid gap-5 sm:w-full"> */}
         <div className="grid gap-5 w-full">
           <section className="text-HeadingColor text-4xl">
             <span>OUR MISSION</span>

@@ -17,13 +17,11 @@ const Blog = () => {
       </section>
       <section className="text-textColor p-2">
         <Image src={newsData[slug]?.image} alt="blog image" className="mb-5" />
-        {/* <span className='uppercase text-3xl text-HeadingColor'>Introduction</span> <br/> */}
         <span className="text-xl text-justify">
           {newsData[slug]?.introduction}
         </span>
       </section>
       <section className="mt-5 text-textColor text-xl text-justify p-2">
-        {/* <span>{newsData[slug]?.news}</span> */}
         {newsData[slug]?.news?.map((data, index) => {
           return (<>
           <div className='mb-3'>

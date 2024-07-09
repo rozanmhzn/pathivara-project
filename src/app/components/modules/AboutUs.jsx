@@ -1,20 +1,16 @@
 import Link from "next/link";
 import React from "react";
-import { IoIosArrowDropright } from "react-icons/io";
 import CommonButton from "../CommonButton";
 
 const AboutUs = () => {
   return (
-    // <div className="flex flex-col mt-5 mr-5 mb-5  p-3 gap-5 lg:w-2/4 sm:w-full md:w-2/3">
     <div className="flex flex-col mt-5 mr-5 mb-5  p-3 gap-5 w-full ">
-      {/*sm:w-2/3 lg:w-2/4 */}
       <section className="text-2xl sm:text-3xl md:text-4xl font-semibold text-HeadingColor">
         <span>ABOUT US</span>
       </section>
       <section className="text-sm sm:text-base md:text-xl font-semibold text-HeadingColor">
         <span>FROM A SMALL STUDIO TO A FULL-CYCLE CREATIVE AGENCY.</span>
       </section>
-      {/* <section className="text-xl lg:w-4/5 sm:w-full md:w-3/4 text-justify"> */}
       <section className="text-xl text-left sm:text-justify">
         <span>
           Welcome to Pathivara Innovations Pvt. Ltd, a dynamic and

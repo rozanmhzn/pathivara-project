@@ -2,7 +2,6 @@
 'use client';
 
 import React, { useState } from 'react'
-// import AI from "../../app/assets/AI.png";
 import Image from 'next/image';
 import { FaLinkedinIn, FaFacebookF } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa";
@@ -26,7 +25,6 @@ const TeamCard = ({data}) => {
 
   return (
     <div
-      // className="lg:w-96 w-80 relative bg-cover"
       className="w-80 relative bg-cover cursor-pointer"
       onMouseEnter={() => onMouseHover()}
       onMouseLeave={() => onMouseHover()}

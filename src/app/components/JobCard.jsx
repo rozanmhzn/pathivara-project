@@ -2,7 +2,6 @@ import Link from 'next/link';
 import React from 'react'
 
 const JobCard = ({data, index}) => {
-  // console.log(index)
 
   return (
     <div className="bg-bgColor p-6 rounded-lg shadow-lg">

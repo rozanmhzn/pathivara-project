@@ -9,7 +9,6 @@ import Testimonials from "./components/modules/Testimonials";
 import LatestNews from "./components/modules/LatestNews";
 import OurClients from "./components/modules/OurClients";
 import Footer from "./components/partials/Footer";
-import ImageSlider from "./components/ImageSlider";
 import HeroSection from "./components/modules/HeroSection";
 import { createGlobalStyle } from "styled-components";
 import { useRef } from "react";
@@ -64,9 +63,9 @@ export default function Home() {
         <section>
           <OurClients />
         </section>
-        <section>
+        {/* <section>
           <Footer />
-        </section>
+        </section> */}
         <section className="side-bar hidden sm:block">
           <SideNavbar />
         </section>
