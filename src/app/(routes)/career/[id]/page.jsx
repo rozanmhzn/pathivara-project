@@ -70,11 +70,12 @@
 import React from "react";
 import { careerData } from "../../../../../public/constant/CareerData";
 import Navbar from "@/app/components/partials/Navbar";
+import Link from "next/link";
 
 // Generate static paths for career pages
 export async function generateStaticParams() {
   const paths = careerData.map((item) => ({
-    id: encodeURIComponent(item.title), // Ensure the ID is encoded
+    id: (item.title), // Ensure the ID is encoded
   }));
 
   console.log(paths);
@@ -85,8 +86,12 @@ const CareerPage = ({ params }) => {
   const { id } = params;
   console.log(id);
 
+  const decodedSlug = decodeURIComponent(id);
+  console.log("Requested slug:", id);
+  console.log("Decoded slug:", decodedSlug);
+
   const career = careerData.find(
-    (item) => encodeURIComponent(item.title) === id
+    (item) => (item.title) === decodedSlug
   );
 
   if (!career) {
@@ -123,9 +128,9 @@ const CareerPage = ({ params }) => {
           ))}
         </ul>
 
-        <a href="/career" className="text-HeadingColor hover:underline">
+        <Link href="/career" className="text-HeadingColor hover:underline">
           Back to Careers
-        </a>
+        </Link>
       </section>
     </div>
   );

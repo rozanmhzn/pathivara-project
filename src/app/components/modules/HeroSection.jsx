@@ -56,7 +56,10 @@ const HeroSection = () => {
                   <span className="w-full md:w-3/4 lg:w-2/3 text-textColor text-lg font-medium mx-auto md:mx-0">
                     {slide.description}
                   </span>
-                  <Link href={`/portfolio/${slide.title}`} className="">
+                  <Link
+                    href={`/portfolio/${encodeURIComponent(slide.title)}`}
+                    className=""
+                  >
                     <CommonButton heading={"View case"} />
                   </Link>
                 </section>

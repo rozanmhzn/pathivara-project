@@ -23,7 +23,7 @@ export const careerData = [
     qualifications: [],
   },
   {
-    title: "UI/UX Designer",
+    title: "UI-UX Designer",
     description:
       "We are looking for a skilled UI/UX Designer to join our development team.",
     responsibilities: [],

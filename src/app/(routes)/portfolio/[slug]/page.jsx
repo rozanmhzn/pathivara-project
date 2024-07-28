@@ -21,7 +21,7 @@ import Navbar from "@/app/components/partials/Navbar";
 
 export async function generateStaticParams() {
   const paths = portfolio.map((item) => ({
-    slug: encodeURIComponent(item.title), // Ensure slug is encoded
+    slug: (item.title), // Ensure slug is encoded
   }));
 
   console.log("Generated paths:", paths); // Debugging output
@@ -108,6 +108,9 @@ const Portfolio = ({ params }) => {
 
   // Decode the slug
   const titleToFind = decodeURIComponent(slug);
+
+  console.log("Requested slug:", slug);
+  console.log("Decoded slug:", titleToFind);
   
   // Find the index of the portfolio item
   const index = portfolio.findIndex((item) => item.title === titleToFind);

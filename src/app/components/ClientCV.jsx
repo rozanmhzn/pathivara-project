@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 const ClientCV = ({ profile }) => {
   const [activeSection, setActiveSection] = useState("");
@@ -25,7 +26,7 @@ const ClientCV = ({ profile }) => {
               <p className="mb-4">{profile.summary}</p>
             </section>
           </div>
-          <div className="flex justify-center mt-4 space-x-4">
+          <div className="flex justify-center items-center mt-4 space-x-4">
             <button
               className={`${
                 activeSection === "education" ? "bg-blue-700" : "bg-blue-500"
@@ -50,6 +51,9 @@ const ClientCV = ({ profile }) => {
             >
               Projects
             </button>
+            <Link href="/our-team" className="text-HeadingColor hover:underline">
+              Back
+            </Link>
           </div>
           {activeSection === "education" && (
             <div>

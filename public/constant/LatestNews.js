@@ -18,7 +18,7 @@ Framework transition: Migrating to the Laravel framework and constructing a soli
     ],
   },
   {
-    title: "How to implement AI in your organization: the definitive guide",
+    title: "How to implement AI in your organization - The definitive guide",
     time: "08 Mar 2024 ..Uncategorized",
     image: blog2,
     introduction: `PwC echoes the sentiment, claiming that AI leaders take a holistic approach to AI development and implementation 
@@ -51,7 +51,7 @@ There’s one more thing you should keep in mind when implementing AI in busines
     ],
   },
   {
-    title: "PROACTIVE INTELLIGENCE: A PARADIGM SHIFT IN CYBER DEFENSE",
+    title: "PROACTIVE INTELLIGENCE - A PARADIGM SHIFT IN CYBER DEFENSE",
     time: "08 Mar 2024 ..Uncategorized",
     image: blog3,
     introduction: `Understanding attacker infrastructure is the key to not just reactive but true, proactive threat intelligence.

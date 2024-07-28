@@ -16,7 +16,6 @@ const ProductionCard = ({ cardData }) => {
         />
         <div className="absolute bg-black bg-opacity-50 h-full w-full">
           <div className="h-full p-4 sm:p-6 md:p-8 lg:p-10 flex flex-col justify-end">
-           
             <div className="flex flex-col mt-2 sm:mt-4 gap-2 sm:gap-3 md:gap-5">
               <span className="text-lg sm:text-xl md:text-3xl lg:text-4xl text-HeadingColor font-bold uppercase">
                 {cardData?.title}
@@ -26,12 +25,13 @@ const ProductionCard = ({ cardData }) => {
                   {cardData?.description}
                 </span>
                 <div>
-                  
-                   <Link href={`/portfolio/${cardData?.title}`}>
-                  <button className="text-textColor font-bold p-2 border w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 lg:w-14 lg:h-14 text-lg sm:text-xl md:text-2xl rounded-full flex justify-center items-center">
-                    <FaRegArrowAltCircleRight />
-                  </button>
-                   </Link>
+                  <Link
+                    href={`/portfolio/${encodeURIComponent(cardData?.title)}`}
+                  >
+                    <button className="text-textColor font-bold p-2 border w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 lg:w-14 lg:h-14 text-lg sm:text-xl md:text-2xl rounded-full flex justify-center items-center">
+                      <FaRegArrowAltCircleRight />
+                    </button>
+                  </Link>
                 </div>
               </div>
             </div>

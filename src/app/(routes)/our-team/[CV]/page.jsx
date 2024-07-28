@@ -439,7 +439,7 @@ import ClientCV from "@/app/components/ClientCV";
 export async function generateStaticParams() {
   // Generate static paths based on available data
   const paths = profiles.map((profile) => ({
-    CV: encodeURIComponent(profile.name),
+    CV: (profile.name),
   }));
   console.log(paths);
 
@@ -449,6 +449,10 @@ export async function generateStaticParams() {
 const CV = ({ params }) => {
   const { CV } = params;
   const titleToFind = decodeURIComponent(CV);
+  
+console.log("Requested slug:", CV);
+console.log("Decoded slug:", titleToFind);
+
   const index = profiles.findIndex((item) => item.name === titleToFind);
   console.log(index);
 

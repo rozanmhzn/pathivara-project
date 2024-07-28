@@ -11,8 +11,8 @@ const Card = ({ data }) => {
         <span>{data?.description}</span>
       </section>
       <section className="cursor-pointer ml-2">
-        <Link href={`/portfolio/${data?.slug}`}>
-        <buton className="hover:underline">{data?.more} </buton>
+        <Link href={`/portfolio/${encodeURIComponent(data?.slug)}`}>
+          <buton className="hover:underline">{data?.more} </buton>
         </Link>
       </section>
     </div>

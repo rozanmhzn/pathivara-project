@@ -14,7 +14,7 @@ const TeamCard = ({data}) => {
     const router = useRouter();
     
     const onClick= (name)=>{
-      router.push(`/our-team/${name}`)
+      router.push(`/our-team/${encodeURIComponent(name)}`);
       // if(name === 'Apurva Nepal'){
       // }
     }
