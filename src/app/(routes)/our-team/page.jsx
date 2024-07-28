@@ -2,7 +2,7 @@
 
 import TeamCard from "@/app/components/TeamCard";
 import React from "react";
-import { profiles } from "@/app/constant/ProfileData";
+import { profiles } from "../../../../public/constant/ProfileData";
 import Navbar from "@/app/components/partials/Navbar";
 
 const OurTeam = () => {

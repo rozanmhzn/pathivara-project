@@ -6,7 +6,7 @@ import Image from "next/image";
 import Link from "next/link";
 import React, { useState, useEffect } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
-import logo from "../../assets/logo.png";
+import logo from "../../../../public/assets/logo.png";
 
 const Navbar = ({ scrollToSection }) => {
   const [isOpen, setIsOpen] = useState(false);

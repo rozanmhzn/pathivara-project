@@ -43,7 +43,8 @@ const applyScrollListener = (ref, setTranslateX) => {
   });
 };
 
-export default ({ children }) => {
+// export default ({ children }) => {
+const HorizontalScroll= ({ children }) => {
   const [dynamicHeight, setDynamicHeight] = useState(null);
   const [translateX, setTranslateX] = useState(0);
 
@@ -70,3 +71,7 @@ export default ({ children }) => {
     </TallOuterContainer>
   );
 };
+
+HorizontalScroll.displayName = 'HorizontalScroll';
+
+export default HorizontalScroll;

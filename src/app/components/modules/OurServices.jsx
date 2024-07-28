@@ -2,7 +2,7 @@
 
 import React from "react";
 import Card from "../Card";
-import { cardData } from "@/app/constant/CardData";
+import { cardData } from "../../../../public/constant/CardData";
 
 const OurServices = () => {
   return (

@@ -15,8 +15,8 @@ const TeamCard = ({data}) => {
     
     const onClick= (name)=>{
       router.push(`/our-team/${name}`)
-      if(name === 'Apurva Nepal'){
-      }
+      // if(name === 'Apurva Nepal'){
+      // }
     }
 
     const onMouseHover = () =>{

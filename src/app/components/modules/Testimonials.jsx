@@ -1,8 +1,8 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
-import user from "../../assets/user.jpg";
-import { productionData } from "@/app/constant/productionData";
+import user from "../../../../public/assets/user.jpg";
+import { productionData } from "../../../../public/constant/productionData";
 import { IoMdArrowDroprightCircle, IoMdArrowDropleftCircle } from "react-icons/io";
 import ProductionCard from "../ProductionCard";
 import styled, { createGlobalStyle } from "styled-components";
@@ -62,7 +62,7 @@ const Testimonials = () => {
             by Pathivara Innovations. Very happy with their product and support.
           </span>
           <section className="mt-5 flex justify-center items-center gap-3">
-            <Image className="rounded-full" width={50} height={50} src={user} />
+            <Image className="rounded-full" width={50} height={50} src={user} alt="user" />
             <div className="flex flex-col">
               <span className="text-lg font-bold">Rameshowr Rijal</span>
               <span className="text-textColor">Principal, KEC</span>

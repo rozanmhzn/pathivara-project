@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
-import AI from "../../assets/services/AI.png";
-import { values } from "@/app/constant/ValuesData";
+import AI from "../../../../public/assets/services/AI.png";
+import { values } from "../../../../public/constant/ValuesData";
 import Card from "@/app/components/Card";
 import OurTeam from "../our-team/page";
 import Link from "next/link";
@@ -22,7 +22,7 @@ const AboutUs = () => {
             <span className="">
               In the corridors of our IT enterprise, we weave tales of
               resilience, creativity, and boundless exploration, sculpting
-              tomorrow's digital landscapes.
+              tomorrow&apos;s digital landscapes.
             </span>
           </div>
           <div>

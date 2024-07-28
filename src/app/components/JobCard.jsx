@@ -9,7 +9,7 @@ const JobCard = ({data, index}) => {
       <p className="text-textColor mb-4">
        {data?.description}
       </p>
-      <Link href={`/career/${index}`}>
+      <Link href={`/career/${data?.title}`}>
       <span className="text-HeadingColor hover:underline cursor-pointer">Read More</span>
       </Link>
     </div>

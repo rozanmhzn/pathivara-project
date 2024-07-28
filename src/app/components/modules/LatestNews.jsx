@@ -3,7 +3,7 @@
 import React,{useState, useRef} from "react";
 import LatestNewsCard from "../LatestNewsCard";
 import BackgroundText from "../BackgroundText";
-import { newsData } from "@/app/constant/LatestNews";
+import { newsData } from "../../../../public/constant/LatestNews";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -72,7 +72,7 @@ const LatestNews = () => {
 
         {newsData?.map((data, index) => {
           return (
-            <div key={index} className="" onClick={()=>onClick(index)}>
+            <div key={index} className="" onClick={()=>onClick(data?.title)}>
               <LatestNewsCard news={data} key={index}/>
             </div>
           );

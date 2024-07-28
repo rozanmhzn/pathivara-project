@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import React from 'react'
-import mission from "../../assets/mission.jpg"
+import mission from "../../../../public/assets/mission.jpg"
 
 const OurMissions = () => {
   return (
@@ -28,7 +28,7 @@ const OurMissions = () => {
               software development, IT audit, web development, digital
               marketing, cloud consultation, app development, graphic design and
               cybersecurity training services that enhance the digital
-              landscape, ensuring our clients' success in an ever-evolving
+              landscape, ensuring our clients&apos; success in an ever-evolving
               technological world.
             </span>
           </section>

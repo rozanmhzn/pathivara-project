@@ -17,7 +17,7 @@ const AboutUs = () => {
           forward-thinking technology company at the forefront of innovation in
           the digital landscape. With a passion for cutting-edge solutions and a
           commitment to excellence, we specialize in a comprehensive range of
-          services designed to empower businesses and organizations in today's
+          services designed to empower businesses and organizations in today&apos;s
           rapidly evolving digital world.
         </span>
       </section>

@@ -77,7 +77,7 @@ export const profiles = [
     projects: [],
   },
   {
-    name: "SACHIN SHRESTHA",
+    name: "Sachin Shrestha",
     title: "Engineer",
     image: Sachin,
     summary: "",
@@ -87,7 +87,7 @@ export const profiles = [
     projects: [],
   },
   {
-    name: "SUBIT TIMALSINA",
+    name: "Subit Timalsina",
     title: "Founder",
     image: Subit,
     summary: "",
@@ -97,7 +97,7 @@ export const profiles = [
     projects: [],
   },
   {
-    name: "MANIL AMATYA",
+    name: "Manil Amatya",
     title: "Founder",
     image: Manil,
     summary: "",
@@ -107,7 +107,7 @@ export const profiles = [
     projects: [],
   },
   {
-    name: "BISHAL MAHARJAN",
+    name: "Bishal Maharjan",
     title: "Founder",
     image: Bishal,
     summary: "",

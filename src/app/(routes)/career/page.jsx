@@ -1,6 +1,6 @@
 import JobCard from '@/app/components/JobCard';
 import React from 'react';
-import { careerData } from '@/app/constant/CareerData';
+import { careerData } from '../../../../public/constant/CareerData';
 import Navbar from '@/app/components/partials/Navbar';
 
 const Career = () => {
